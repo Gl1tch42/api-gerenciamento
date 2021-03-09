@@ -1,0 +1,28 @@
+{
+  "name": "api-gerenciamento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./src/sever.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gl1tch42/api-gerenciamento.git"
+  },
+  "author": "jean Michel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gl1tch42/api-gerenciamento/issues"
+  },
+  "homepage": "https://github.com/Gl1tch42/api-gerenciamento#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.19"
+  }
+}
