@@ -1,28 +1,30 @@
 {
-  "name": "backend",
+  "name": "api-gerenciamento",
   "version": "1.0.0",
   "description": "",
-  "main": "serve.js",
+  "main": "src/sever.js",
   "scripts": {
-    "start": "nodemon src/serve.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/sever.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gl1tch42/api-gerenciamento.git"
   },
-  "author": "Jean Michel",
-  "license": "MIT",
+  "author": "jean Michel",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Gl1tch42/api-gerenciamento/issues"
   },
   "homepage": "https://github.com/Gl1tch42/api-gerenciamento#readme",
   "dependencies": {
-    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.17",
-    "nodemon": "^2.0.6"
+    "mongoose": "^5.11.19",
+    "nodemon": "^2.0.7",
+    "uuidv1": "^1.6.14"
   }
 }
