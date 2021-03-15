@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const app = require('./app');
-const port = process.env.PORT || 5569;
+const port = process.env.PORT || 3333;
 require('dotenv').config();
 
 
@@ -24,7 +24,6 @@ mongoose.connect(process.env.MONGODB_URL, {
 const empregadosController = require('./routes/empregadosRoutes');
 const gastosController = require('./routes/gastosRoutes');
 const faturamentoController = require('./routes/faturamentoRoutes');
-//const techController = require('./routes/techRoutes');
 const authController = require('./routes/authRoutes');
 
 app.use('/empregados', empregadosController);
