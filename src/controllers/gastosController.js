@@ -35,7 +35,7 @@ const gastosCtrl = {
 
         try{
             const gastos = await Gastos.find();
-            res.json({gastos});
+            res.json(gastos);
 
         } catch (err) {
             return res.status(400).json(

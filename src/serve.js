@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const app = require('./app');
 const port = process.env.PORT || 3333;
+const cors = require('cors');
 require('dotenv').config();
 
 
@@ -26,9 +27,16 @@ const gastosController = require('./routes/gastosRoutes');
 const faturamentoController = require('./routes/faturamentoRoutes');
 const authController = require('./routes/authRoutes');
 
+app.use(cors(
+    {
+      origin: '*',
+    }
+  ));
+
 app.use('/empregados', empregadosController);
 app.use('/gastos', gastosController);
 app.use('/faturamento', faturamentoController);
 app.use('/auth', authController);
+
 
 app.listen(port);

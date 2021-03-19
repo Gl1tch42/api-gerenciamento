@@ -36,7 +36,7 @@ const empregadosCtrl = {
 
         try{
             const empregados = await Empregado.find();
-            res.json({empregados});
+            res.json(empregados);
 
         } catch (err) {
             return res.status(400).json(

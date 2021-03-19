@@ -36,7 +36,7 @@ const faturamentoCtrl = {
 
         try{
             const faturamento = await Faturamento.find();
-            res.json({faturamento});
+            res.json(faturamento);
 
         } catch (err) {
             return res.status(400).json(
